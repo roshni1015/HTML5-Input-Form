@@ -14,3 +14,11 @@ emails.addEventListener('input',function(){
             texterror.textContent="";
         else texterror.textContent="Please Enter Valid Email ID";
 });
+const mobile=document.querySelector("#mobile");
+const mobileerror=document.querySelector(".mobileerror");
+mobile.addEventListener('input',function(){
+    let mobileRegex=RegExp('^[0-9]{2,4}[ ]{1}[6-9]{1}[0-9]{9}$');
+        if(mobileRegex.test(text.value))
+            texterror.textContent="";
+        else texterror.textContent="Please Enter Valid Email ID";
+});
