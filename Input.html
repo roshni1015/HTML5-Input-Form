@@ -23,14 +23,20 @@
         </div> 
         <div>
             <lable>Enter Your Mob.No.: </lable>
-            <input type="text" name="mobile" placeholder="Enter Your Mobile Number" id="mobile;" required>
-            <error-output class="mobileerror" for="text"></error-output>
+            <input type="mobile" name="mobile" placeholder="Enter Your Mobile Number" id="mobile;" required>
+            <error-output class="mobileerror" for="mobile"></error-output>
         </div>
         <div>
             <lable>Enter Your Password: </lable>
-            <input type="text" name="password" placeholder="Enter Your Password" id="password;" required>
-            <error-output class="passworderror" for="text"></error-output>
-        </div>                 
+            <input type="password" name="password" placeholder="Enter Your Password" id="password;" required>
+            <error-output class="passworderror" for="password"></error-output>
+        </div>
+        <div>
+            <label for="range">Choose Your Salary : </label>
+            <input type="range" name="salary" id="salary" 
+            min="20000" max="100000" step="100" value="60000" >
+            <output for="salary">100000</output>
+        </div>         
     </form>
     <script>src = "script.js"</script>    
 </body>
