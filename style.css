@@ -1,13 +1,19 @@
+html,input{
+    font-family: Serif;
+  }
+  
 body{
     width: 100%;
     max-width: 600px;
     margin: 0px auto;
     padding: 2em;
   }
-  form{
-    margin: 20px;
+
+form{
+    margin: 16px;
   }
-  .headercss{
+
+.headercss{
     display: flex;
     flex-flow: column;
     background:rgb(255, 0, 140);
@@ -17,13 +23,14 @@ body{
 }
 
 div {
+    margin-bottom: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 label, input, button { 
-    font-size: 15px;
+    font-size: 12px;
     font-family: Serif;
     line-height: 1.5
 }
@@ -35,4 +42,13 @@ label {
 
 input {
     flex: auto;
+}
+button{
+    width: 60%;
+    margin:0 auto;
+    background-color: green;
+  }
+texterror
+{
+  color:red;
 }

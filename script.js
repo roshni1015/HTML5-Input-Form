@@ -1,8 +1,16 @@
 const text=document.querySelector("#text");
-        const texterror=document.querySelector(".texterror");
-        text.addEventListener('input',function() {
-                let nameRegex=RegExp('^[A-Z]{1}[a-z]{2}$');
-                if(nameRegex.test(text.value))
-                    texterror.textContent="";
-                else texterror.textContent="Name is Incorrect";
-            });
+const texterror=document.querySelector(".texterror");
+text.addEventListener('input',function() {
+    let nameRegex=RegExp('^[A-Z]{1}[a-z]{2}$');
+        if(nameRegex.test(text.value))
+            texterror.textContent="";
+        else texterror.textContent="Please Enter First Letter Capital";
+});
+const emails=document.querySelector("#email");
+const Emailerror=document.querySelector(".Emailerror");
+emails.addEventListener('input',function(){
+    let emailRegex=RegExp('^[a-zA-Z0-9]+.[a-zA-Z0-9]+@[A-Za-z0-9]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$');
+        if(emailRegex.test(text.value))
+            texterror.textContent="";
+        else texterror.textContent="Please Enter Valid Email ID";
+});
