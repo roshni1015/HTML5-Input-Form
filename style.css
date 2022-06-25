@@ -1,0 +1,38 @@
+body{
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 2em;
+  }
+  form{
+    margin: 20px;
+  }
+  .headercss{
+    display: flex;
+    flex-flow: column;
+    background:rgb(255, 0, 140);
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label, input, button { 
+    font-size: 15px;
+    font-family: Serif;
+    line-height: 1.5
+}
+label {
+    text-align: right;
+    width: 30%;
+    margin-right: 2%;
+}
+
+input {
+    flex: auto;
+}
