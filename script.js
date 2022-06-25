@@ -22,3 +22,12 @@ mobile.addEventListener('input',function(){
             texterror.textContent="";
         else texterror.textContent="Please Enter Valid Email ID";
 });
+const password=document.querySelector("#password");
+const passworderror=document.querySelector(".passworderror");
+password.addEventListener('input',function(){
+    let passwordRegex=RegExp('^[0-9]{2,4}[ ]{1}[6-9]{1}[0-9]{9}$');
+        if(passwordRegex.test(text.value))
+            texterror.textContent="";
+        else texterror.textContent="Incorrect Password";
+});
+
